@@ -19,4 +19,10 @@ public class ButtonScript : MonoBehaviour
         Button button = GetComponent<Button>();
         button.Select();
     }
+
+    public void PressedBox()
+    {
+        Manager manager = FindObjectOfType<Manager>();
+        manager.Recognise(this);
+    }
 }
