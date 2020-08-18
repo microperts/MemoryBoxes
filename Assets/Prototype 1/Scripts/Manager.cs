@@ -7,8 +7,9 @@ public class Manager : MonoBehaviour
    [SerializeField] ButtonScript[] buttons;
     List<int> toPress = new List<int>();
     List<int> pressed=new List<int>();
-    bool waiting = false;
+   public bool waiting = false;
     int timesPressed=0;
+    int correct = 0;
     void Start()
     {
         StartCoroutine(PlayNotes());
@@ -29,10 +30,10 @@ public class Manager : MonoBehaviour
         }
         waiting = true;
 
-        for (int i = 0; i < toPress.Count; i++)
-        {
-            print(toPress[i]);
-        }
+        //for (int i = 0; i < toPress.Count; i++)
+        //{
+        //    print(toPress[i]);
+        //}
     }
 
     public void Recognise(ButtonScript button)
@@ -82,14 +83,29 @@ public class Manager : MonoBehaviour
     void CheckIfCorrect()
     {
         //Pressed buttons start at 1 and toPress start at 1 so you have to minus here when checking
-        if (pressed[timesPressed-1] == toPress[timesPressed-1])
+        if (pressed[timesPressed - 1] - 1 == toPress[timesPressed - 1])
         {
+            correct++;
             print("Correct my dear");
+            if (correct == 6)
+            {
+                Invoke("StartAgain", 1f);
+            }
         }
         else
         {
             print("Wroooong");
+            waiting = false;
+            //Should Add a delay before starting again
+            Invoke("StartAgain", 1.5f);
         }
-
-    }
+        }
+    
+    void StartAgain()
+        {
+            StartCoroutine(PlayNotes());
+            correct = 0;
+        }
 }
+
+

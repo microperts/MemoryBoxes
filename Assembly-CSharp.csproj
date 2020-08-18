@@ -60,9 +60,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ButtonScript.cs" />
-    <Compile Include="Assets\Scripts\Manager.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Prototype 1\Scripts\ButtonScript.cs" />
+    <Compile Include="Assets\Prototype 1\Scripts\Manager.cs" />
+    <Compile Include="Assets\Prototype 1\Scripts\Player.cs" />
+    <Compile Include="Assets\Prototype2\Scriipts\Butoons.cs" />
+    <Compile Include="Assets\Prototype2\Scriipts\SecondManager.cs" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Prototype2\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>U:/Project_4/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

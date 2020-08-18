@@ -5,10 +5,16 @@ using UnityEngine.UI;
 
 public class ButtonScript : MonoBehaviour
 {
+    Manager manager;
+    private void Start()
+    {
+      manager = FindObjectOfType<Manager>();
+
+    }
     public void PlayTone()
     {
         AudioSource source = GetComponent<AudioSource>();
-        if (!source.isPlaying)
+        if (!source.isPlaying&&manager.waiting)
         {
             source.Play();
         }
@@ -22,7 +28,7 @@ public class ButtonScript : MonoBehaviour
 
     public void PressedBox()
     {
-        Manager manager = FindObjectOfType<Manager>();
+        manager = FindObjectOfType<Manager>();
         manager.Recognise(this);
     }
 }
