@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ButtonScript : MonoBehaviour
 {
-    Manager manager;
+    PlayerController manager;
     Animator animator;
     Button thisButton;
     ColorBlock temp;
@@ -13,7 +13,7 @@ public class ButtonScript : MonoBehaviour
 
     private void Start()
     {
-      manager = FindObjectOfType<Manager>();
+      manager = FindObjectOfType<PlayerController>();
       animator = GetComponent<Animator>();
       thisButton = GetComponent<Button>();
       temp = thisButton.colors;
@@ -37,7 +37,7 @@ public class ButtonScript : MonoBehaviour
 
     public void PressedBox()
     {
-        manager = FindObjectOfType<Manager>();
+        manager = FindObjectOfType<PlayerController>();
         manager.Recognise(this);
     }
     public void ColorChanger()
